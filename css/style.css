@@ -73,3 +73,13 @@ button:active {
   text-align: left;
   margin-bottom: 5px;
 }
+
+#input_field_farenheit {
+  text-align: left;
+  margin-bottom: 5px;
+}
+#input_field_kalkulasi {
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
