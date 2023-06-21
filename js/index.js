@@ -10,7 +10,7 @@ function roundNumber(number) {
   return Math.round(number * 100) / 100;
 }
 
-/*inputField.addEventListener("keypress", function (event) {
+inputField.addEventListener("keypress", function (event) {
   if (!numberRegex.test(event.key)) {
     alert("masukkan angka!");
     result.style.display = "none";
@@ -18,7 +18,7 @@ function roundNumber(number) {
   }
 });
 
-inputAreaCel.addEventListener("input", function () {
+/*inputAreaCel.addEventListener("input", function () {
   let cTemp = parseFloat(inputAreaCel.value);
   let fTemp = cTemp * (9 / 5) + 32;
 

@@ -61,6 +61,11 @@ button:active {
   text-align: left;
 }
 
+.quotes {
+  margin-top: 30px;
+  text-align: center;
+}
+
 /*MARK:ID*/
 #input_field {
   outline: none;
