@@ -93,3 +93,8 @@ button:active {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+#reverseBtn a {
+  text-decoration: none;
+  color: white;
+}

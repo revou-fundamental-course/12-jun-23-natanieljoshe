@@ -1,4 +1,4 @@
-//Function for the celcius to fahrenheit
+//Function for the fahrenheit to celcius
 const numberRegex = /^[0-9]+$/;
 
 const inputField = document.getElementById("input_field");
@@ -29,20 +29,20 @@ inputField.addEventListener("keypress", function (event) {
 });*/
 
 //formula
-const inputAreaCel = () => {
-  var celcius = parseFloat(document.querySelector(".inputAreaCel").value);
+const inputAreaFar = () => {
+  var fahrenheit = parseFloat(document.querySelector(".inputAreaFar").value);
 
-  var fahrenheitRes = 1.8 * celcius + 32;
-  var a = fahrenheitRes.toFixed(2);
+  var celciusRes = (5 / 9) * (fahrenheit - 32);
+  var a = celciusRes.toFixed(2);
 
-  document.querySelector(".inputAreaCel").value = celcius;
-  document.querySelector(".inputAreaFar").value = a;
+  document.querySelector(".inputAreaFar").value = fahrenheit;
+  document.querySelector(".inputAreaCel").value = a;
 };
 
 //reset button
 function resetButton() {
-  celcius = "";
+  fahrenheit = "";
   a = "";
-  document.querySelector(".inputAreaCel").value = "";
   document.querySelector(".inputAreaFar").value = "";
+  document.querySelector(".inputAreaCel").value = "";
 }

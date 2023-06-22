@@ -9,18 +9,20 @@
   <body>
     <section class="main_section">
       <header>
-        <h1 id="page_title">Temperature Conversion C to F</h1>
+        <h1 id="page_title">Temperature Conversion F to C</h1>
       </header>
       <section class="input_section">
-        <label for="input_field" id="input_field_celcius">Celcius</label>
+        <label for="input_field" id="input_field_farenheit"
+          >Fahrenheit (*F)</label
+        >
         <input
-          type="text"
+          type="number"
           id="input_field"
-          class="inputAreaCel"
-          placeholder="celcius"
+          class="inputAreaFar"
+          placeholder="Fahrenheit"
         />
         <div class="input_button_section">
-          <button id="btnConversion" type="submit" Onclick="inputAreaCel()">
+          <button id="btnConversion" type="submit" Onclick="inputAreaFar()">
             Conversion
           </button>
           <button
@@ -31,28 +33,25 @@
           >
             Reset
           </button>
-          <button id="reverseBtn"><a href="./swapUnit.html">Reverse</a></button>
+          <button id="reverseBtn"><a href="./index.html">Reverse</a></button>
         </div>
-        <label for="input_field" id="input_field_farenheit"
-          >Fahrenheit (*F)</label
-        >
+
+        <label for="input_field" id="input_field_celcius">Celcius</label>
         <input
-          type="number"
+          type="text"
           id="input_field"
-          class="inputAreaFar"
-          placeholder="Fahrenheit"
+          class="inputAreaCel"
+          placeholder="celcius"
         />
         <label for="input_field" id="input_field_kalkulasi"
           >Cara Kalkulasi:</label
         >
         <div class="calc_desc">
           <p>
-            Suhu S dalam derajat Fahrenheit (*F) sama dengan suhu S dalam
-            derajat Celcius (*C) kali 9/5 tambah 32.
+            Suhu S dalam derajat Celcius (*C) sama dengan suhu S dalam derajat
+            Fahrenheit (*F) dikurangi 32 lalu kali 5/9 .
           </p>
-          <p>S(*F)=(S(*C)x 9/5)+32</p>
-          <p>atau</p>
-          <p>S(*F)=(S(*C)x1.8)+32</p>
+          <p>S(*C)=(5/9) x (S(*F)-32)</p>
         </div>
         <div class="quotes">
           <p><i>makan roti pake keju, I love you so much revou</i></p>
@@ -60,6 +59,6 @@
       </section>
       <h3 id="result" style="display: none">Result</h3>
     </section>
-    <script src="./js/index.js"></script>
+    <script src="./js/swapunit.js "></script>
   </body>
 </html>
